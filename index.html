@@ -33,7 +33,7 @@
         }
 
         .slider {
-            display: block;
+            display: list-item;
             height: 293px;
             width: 600px;
             margin: auto;
@@ -42,9 +42,9 @@
         }
 
         .slider li {
-            list-style: none;
+            list-style: 1;
             position: absolute;
-            opacity: 0;
+            opacity: 1;
         }
 
         .slider img {
@@ -54,14 +54,14 @@
         }
 
         .slider input {
-            display: none;
+            display: list-item;
         }
 
         .slider label {
             background-color: #000;
             bottom: 10px;
             cursor: pointer;
-            display: none;
+            display: list-item;
             height: 10px;
             position: absolute;
             width: 10px;
@@ -124,12 +124,12 @@
     <main>
         <div class="slider">
             <li>
-                <input type="radio" id="slide1" name="slide">
+                <input type="radio" id="slide1" name="slider">
                 <label for="slide1"></label>
                 <img src="/imagem_de_fundo_cabecalho_opcao_2.jpeg" alt="Cuscuz Paulista">
             </li>
             <li>
-                <input type="radio" id="slide2" name="slide">
+                <input type="radio" id="slide2" name="slider">
                 <label for="slide2"></label>
                 <img src="/imagem_de_fundo_cabecalho.jpeg" alt="Virado a Paulista">
             </li>
