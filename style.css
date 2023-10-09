@@ -11,7 +11,6 @@
             text-align: center;
             padding: 20px;
             background-color: #e3b39c;
-            background-image: url(/imagem_de_fundo_cabecalho_opcao_2.jpeg);
         }
 
         header nav ul {
@@ -79,7 +78,7 @@
         
         .slider li input:checked ~ img {
             opacity: 1;
-            visibility: collapse;
+            visibility: visible;
             z-index: 10;
         }
 
