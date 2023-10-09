@@ -31,9 +31,9 @@
             background-color: #93b39e;
 
         }
-
+        * { margin: 0; padding: 0; }
         .slider {
-            display: list-item;
+            display: block;
             height: 293px;
             width: 600px;
             margin: auto;
@@ -42,26 +42,26 @@
         }
 
         .slider li {
-            list-style: 1;
+            list-style: none;
             position: absolute;
-            opacity: 1;
         }
 
         .slider img {
+            margin: auto;
             height: 100%;
             width: 100%;
             vertical-align: top;
         }
 
         .slider input {
-            display: list-item;
+            display: none;
         }
 
         .slider label {
             background-color: #000;
             bottom: 10px;
             cursor: pointer;
-            display: list-item;
+            display: block;
             height: 10px;
             position: absolute;
             width: 10px;
@@ -74,6 +74,13 @@
 
         .slider li:nth-child(2) label {
             left: 40px;
+        }
+        
+        
+        .slider li input:checked ~ img {
+            opacity: 1;
+            visibility: collapse;
+            z-index: 10;
         }
 
         .main {
