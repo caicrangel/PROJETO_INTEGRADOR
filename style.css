@@ -1,4 +1,6 @@
 
+      
+
         body {
             margin: 0;
             padding: 0;
@@ -8,6 +10,8 @@
         header {
             text-align: center;
             padding: 20px;
+            background-color: #e3b39c;
+            background-image: url(/imagem_de_fundo_cabecalho_opcao_2.jpeg);
         }
 
         header nav ul {
@@ -22,7 +26,10 @@
 
         header nav ul li a {
             text-decoration: none;
-            color: #000;
+            color: #000000;
+            font: small-caps bold 14px/1 sans-serif;
+            background-color: #93b39e;
+
         }
 
         .slider {
