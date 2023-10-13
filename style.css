@@ -1,5 +1,9 @@
 
-      
+
+
+font-family: 'Gabarito', sans-serif;
+font-family: 'Raleway', sans-serif;
+
 
         body {
             margin: 0;
@@ -32,12 +36,16 @@
         }
         * { margin: 0; padding: 0; }
         .slider {
-            display: block;
+            display: flex;
             height: 293px;
             width: 600px;
             margin: auto;
             margin-top: 20px;
             position: relative;
+        }
+
+        main{
+            display: flex;
         }
 
         .slider li {
@@ -50,6 +58,7 @@
             height: 100%;
             width: 100%;
             vertical-align: top;
+            align-items: center;
         }
 
         .slider input {
@@ -83,8 +92,8 @@
         
         .slider li input:checked ~ img {
             opacity: 1;
-            visibility: visible;
-            z-index: 10;
+            visibility: none;
+            z-index: 11;
         }
 
         .topo {
@@ -113,7 +122,12 @@
         }
         #texto_principal {
             display:flex;
-            align-items: center;
+            align-items: centers;
             flex-direction: column;
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
 
         }
