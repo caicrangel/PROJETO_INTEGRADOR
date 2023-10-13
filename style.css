@@ -60,7 +60,8 @@
             background-color: #000;
             bottom: 10px;
             cursor: pointer;
-            display: block;
+            display: flex;
+            align-items: flex-start;
             height: 10px;
             position: absolute;
             width: 10px;
@@ -82,13 +83,13 @@
             z-index: 10;
         }
 
-        .main {
+        .topo {
             position: relative;
             text-align: center;
             padding: 20px;
         }
 
-        .main img {
+        .topo img {
             max-width: 100%;
             height: auto;
         }
@@ -105,4 +106,9 @@
             width: 100%;
             bottom: 0;
             background-color: #f9f9f9;
+        }
+        #texto_principal {
+            display:flex;
+            align-items: center;
+
         }
