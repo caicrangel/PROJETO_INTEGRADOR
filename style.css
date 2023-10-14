@@ -38,7 +38,6 @@
 
         .slide img{
             width: 800px;
-            position: flex;
         }
 
         .manual-navigation{
@@ -78,6 +77,27 @@
         #radio4:checked ~ .first{
             margin-left: 100% ;
         }
+
+        .navigation-auto div{
+            border: 2px solid #e3b39c;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+        .navigation-auto{
+            position: absolute;
+            width: 800px;
+            margin-top: 360px;
+            display: flex;
+            justify-content: center;
+        } 
+
+        .navigation-auto div:not(:last-child){
+            margin-right: 40px;
+        }
+
 
 
 
