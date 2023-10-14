@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5cf9b42826.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/index.css">
     <title>Saboreie o Brasil</title>
 </head>
 <body>
     <!-- Cabeçalho -->
+<body>
     <header>
-        <div id="logo">
-            <img src="img/logo.jpeg" alt="Logo do Site">
-        </div>
+        <div class="container"> <!--vai servir para delimitar a distância entre o lado direito e esquerdo -->
+        <div class="logo"><img src="/img/logo1.jpg" alt=""></div>
         <nav>
             <ul>
-                <li><a href="#">Menu 1</a></li>
-                <li><a href="#">Menu 2</a></li>
-                <li><a href="#">Menu 3</a></li>
-                <li><a href="#">Menu 4</a></li>
-                <li><a href="#">Menu 5</a></li>
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                
+                <li class="dropdown-guia">
+                    <a href="#">Guia Gastronômico</a>
+                        <div class="dropdown-estados">
+                            <a href="#">Ceará</a>     
+                            <a href="#">Minas Gerais</a>
+                            <a href="#">Pernambuco</a>
+                            <a href="/rio_grande_do_sul.html">Rio Grande do Sul</a>
+                            <a href="#">São Paulo</a>
+                        </div>
+                </li>
+                
+                <li>
+                    <a href="#">Guia de Restaurantes</a>
+                </li>
+                <li>
+                    <a href="#">Reservas</a>
+                </li>
             </ul>
         </nav>
-    </header>
+        
+        <div class="sociais">
+            <button><i class="fa-brands fa-square-instagram"></i></button> <!--Será inserido os ícones da redes sociais-->
+            <button><i class="fa-brands fa-youtube"></i></button>
+            <button><i class="fa-brands fa-square-x-twitter"></i></button>
+        </div>   
+        
+        <div class="search-box">
+            <input type="text" class="search-text" placeholder="O que você procura?">
+            <a class="search-btn" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="#d79c8f" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+            </a>
+        </div>
+        </div>
+
+      </header>   
+</body>
+
+</html>
 
 
     <!-- Conteúdo do Site -->
     <main>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi sed amet officia. Qui ab magni rerum totam ea, reprehenderit a maiores aliquid tempora, earum excepturi magnam. Facere laboriosam cumque rerum!</p>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium dolorum molestiae expedita aliquam labore similique in quisquam adipisci obcaecati, rerum magnam incidunt quidem corrupti quaerat laborum nobis soluta. Fugiat, perferendis.Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi sed amet officia. Qui ab magni </p>
- 
-    <div id="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.1363945501753!2d-46.6554486255378!3d-23.56354436167078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8708505e1%3A0xcec784f3ad755afd!2sOutback!5e0!3m2!1spt-BR!2sbr!4v1696551908026!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-
+    
     </main>
 
     <!-- Rodapé -->
