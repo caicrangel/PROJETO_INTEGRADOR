@@ -11,6 +11,29 @@
             font-family: 'Gabarito' , sans-serif;
         }
 */
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gabarito',sans-serif;
+    font-size: 25px;
+
+#texto1{
+    color: #93b39e;
+    text-decoration: double;
+}
+
+.subtitulos-index{
+    color: #49701c;
+    text-decoration: double;
+}
+
+}
 .slider{
     margin: 0 auto;
     width: 800px;

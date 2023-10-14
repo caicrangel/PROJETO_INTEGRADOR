@@ -1,9 +1,9 @@
-let count = 1;
-document.getElementById("radio1").checked = true;
+let count =1;
+document.getElementsById("radio1").checked = true;
 
-setInterval( function(){
+setInterval(function(){
+},2000)
 
-}, 2000)
 
 function nextImage(){
     count++;
@@ -11,6 +11,5 @@ function nextImage(){
         count = 1;
     }
 
-  document.getElementById("radio"+count).checked = true;  
-
+    document.getElementsById("radio"+count).checked = true;
 }
