@@ -159,7 +159,7 @@
 .culinaria{
     background-color: #d79c8f;
     max-width: 1080px;
-    margin: auto; /*Centralizar a posição da div descricao*/
+    margin: auto; /*Centralizar a posição da div */
     display: table;
     padding: 40px; /*Espaçamento*/
     border-radius: 40px;
@@ -183,8 +183,71 @@
 
 /*Estilizando fundo da seção restaurantes*/
 
+.titulo-restaurantes{
+ margin-right: 30px; 
+}
+
+.dicas-restaurantes{
+    background-color: #93B39E;
+    margin: auto; /*Centralizar a posição da div */
+    display: table;
+    padding: 40px; /*Espaçamento*/
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif; 
+    width: 400px;
+}
+
+.conteudo-restaurantes01{ 
+  background-color: #d79c8f;
+  border-radius: 40px;
+  padding: 20px;
+  display: table-cell;
+  margin-top: 10px;
+}
+
+.img-dica-01{
+ padding: 10px; 
+}
+
+.conteudo-restaurantes02{
+  background-color: #d79c8f;
+  border-radius: 40px;
+  padding: 20px;
+  transform: translate(10px); 
+}
+
+.img-dica-02{
+  padding: 10px; 
+ }
 
 
 
-/*Estilizando seção dica de restaurantes*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
