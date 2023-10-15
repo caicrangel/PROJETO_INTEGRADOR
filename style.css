@@ -1,5 +1,6 @@
 
 
+
 /*body {
             margin: 0;
             padding: 0;
@@ -143,6 +144,14 @@ body{
 
 
 
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            
+        }
+
+
         header {
             text-align: center;
             padding: 20px;
@@ -166,17 +175,29 @@ body{
             background-color: #93b39e;
 
         }
+
         /*.slider {
             display: flex;
+
+        * { margin: 0; padding: 0; }
+        .slider {
+            display: block;
+
             height: 293px;
             width: 600px;
             margin: auto;
             margin-top: 20px;
             position: relative;
+
         }*/
 
 
         /*.slider li {
+
+        }
+
+        .slider li {
+
             list-style: none;
             position: absolute;
         }
@@ -186,19 +207,30 @@ body{
             height: 100%;
             width: 100%;
             vertical-align: top;
+
             align-items: center;
         }
 
         .slider input {
             display: flex;
+
+        }
+
+        .slider input {
+            display: none;
+
         }
 
         .slider label {
             background-color: #000;
             bottom: 10px;
             cursor: pointer;
+
             display: flex;
             align-items: flex-end;
+
+            display: block;
+
             height: 10px;
             position: absolute;
             width: 10px;
@@ -213,24 +245,38 @@ body{
             left: 40px;
         }
 
+
         .slider li:nth-child(3) label {
             left: 40px;
         }
+
+
         
         
         .slider li input:checked ~ img {
             opacity: 1;
+
             visibility: none;
             z-index: 11;
         }*/
 
         .topo {
+            visibility: visible;
+            z-index: 10;
+        }
+
+        .main {
+
             position: relative;
             text-align: center;
             padding: 20px;
         }
 
+
         .topo img {
+
+        .main img {
+
             max-width: 100%;
             height: auto;
         }
@@ -247,6 +293,7 @@ body{
             width: 100%;
             bottom: 0;
             background-color: #f9f9f9;
+
         }
         #texto_principal {
             display:flex;
@@ -285,3 +332,5 @@ header nav ul li a {
 header nav ul li a:hover {
     background-color: #f0f0f0; /* Cor de fundo ao passar o mouse */
 }
+        }
+
