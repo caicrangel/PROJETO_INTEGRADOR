@@ -191,7 +191,7 @@
     background-color: #93B39E;
     margin: auto; /*Centralizar a posição da div */
     display: table;
-    padding: 40px; /*Espaçamento*/
+    padding: 30px; /*Espaçamento*/
     border-radius: 40px;
     font-family: 'Montserrat', sans-serif; 
     width: 400px;
@@ -200,7 +200,7 @@
 .conteudo-restaurantes01{ 
   background-color: #d79c8f;
   border-radius: 40px;
-  padding: 20px;
+  padding: 10px;
   display: table-cell;
   margin-top: 10px;
 }
@@ -212,7 +212,7 @@
 .conteudo-restaurantes02{
   background-color: #d79c8f;
   border-radius: 40px;
-  padding: 20px;
+  padding: 10px;
   transform: translate(10px); 
 }
 
