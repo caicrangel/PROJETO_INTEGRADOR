@@ -1,16 +1,4 @@
-
-
-/*body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh;
-            display: absolute;
-            justify-content: center;
-            align-items: baseline;
-            font-family: 'Gabarito' , sans-serif;
-        }
-*/
+/*CSS RESTANTE DO SITE*/
 
 body{
     margin: 0;
@@ -22,6 +10,8 @@ body{
     align-items: center;
     font-family: 'Gabarito',sans-serif;
     font-size: 25px;
+    }
+
 
 #texto1{
     color: #93b39e;
@@ -33,7 +23,70 @@ body{
     text-decoration: double;
 }
 
-}
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e3b39c;
+        }
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #000000;
+            font: small-caps bold 14px/1 sans-serif;
+            background-color: #93b39e;
+
+        }
+        
+
+        .topo {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .topo img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #mapa {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            background-color: #f9f9f9;
+        }
+        #texto_principal {
+            display:flex;
+            align-items: centers;
+            flex-direction: column;
+            text-align: center;
+            padding-left: 50px;
+            padding-right: 50px;
+            margin-left: 50px;
+            margin-right: 50px;
+
+        }
+
+
+
+/*CSS Slides*/
 .slider{
     margin: 0 auto;
     width: 800px;
@@ -143,30 +196,27 @@ body{
 
 
 
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #e3b39c;
-        }
 
-        header nav ul {
-            list-style: none;
+
+
+/*Código Comentados*/
+
+
+
+
+/*body {
+            margin: 0;
             padding: 0;
+            width: 100%;
+            height: 100vh;
+            display: absolute;
+            justify-content: center;
+            align-items: baseline;
+            font-family: 'Gabarito' , sans-serif;
         }
+*/
 
-        header nav ul li {
-            display: inline;
-            margin: 0 10px;
-        }
-
-        header nav ul li a {
-            text-decoration: none;
-            color: #000000;
-            font: small-caps bold 14px/1 sans-serif;
-            background-color: #93b39e;
-
-        }
-        /*.slider {
+/*.slider {
             display: flex;
             height: 293px;
             width: 600px;
@@ -222,40 +272,4 @@ body{
             opacity: 1;
             visibility: none;
             z-index: 11;
-        }*/
-
-        .topo {
-            position: relative;
-            text-align: center;
-            padding: 20px;
-        }
-
-        .topo img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        #mapa {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        footer {
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-            background-color: #f9f9f9;
-        }
-        #texto_principal {
-            display:flex;
-            align-items: centers;
-            flex-direction: column;
-            text-align: center;
-            padding-left: 50px;
-            padding-right: 50px;
-            margin-left: 50px;
-            margin-right: 50px;
-
-        }
+        }*/        

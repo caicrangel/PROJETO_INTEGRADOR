@@ -3,106 +3,73 @@ body{
     padding: 0;
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: absolute;
     justify-content: center;
     align-items: center;
+    font-family: 'Gabarito',sans-serif;
+    font-size: 25px;
+    }
 
-}
-
-.slider{
-    margin: 0 auto;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
-}
-
-.slides{
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input{
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-}
-
-.slide img{
-    width: 800px;
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
+.header{
+    background-image: url(/imagens_index/spaghetti-1932466_1280.jpg);
+    text-align: right;
+    align-items: center;
     justify-content: center;
+    display: relative;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gabarito', sans-serif;
 }
 
-.manual-btn{
-    border: 2px solid #FFF;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
 
-.manual-btn:not(:last-child){
-    margin-right: 40px;
 
-}
+.nav ul{ 
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+    }
 
-.manual-btn:hover{
+
+.nav ul li{ 
+    display: inline-block; 
+    }
+
+.nav ul li a{
+    padding: 2px 10px;
+    display: inline-block;
     background-color: #FFF;
+    color: #d79c8f;
+    text-decoration: none;
+    border-bottom: 3px solid #EDEDED;
 }
 
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-#radio4:checked ~ .first{
-    margin-left: -75%;
+.nav ul li a :hover{
+    background-color: #93b39e;
+    color: black;
+    border-bottom: 3px solid #EDEDED;
 }
 
-.navigation-auto div{
-    border: 2px solid #93b39e;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-}
+/*
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #e3b39c;
+    }
 
-.navigation-auto{
-    position: absolute;
-    width: 800px;
-    margin-top: 360px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background-color: #FFF;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background-color: #FFF;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background-color: #FFF;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background-color: #FFF;
-}
-
+header nav ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+    }
+    
+header nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    font: small-caps bold 14px/1 sans-serif;
+    background-color: #93b39e;
+    }
