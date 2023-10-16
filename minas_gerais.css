@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -22,7 +23,7 @@ body{
 header {
   /* background-color: lightgrey */
   background: linear-gradient(to bottom,rgb(240, 239, 239), white); 
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: 150px;
   font-family: 'Montserrat', sans-serif;
@@ -278,6 +279,11 @@ footer {
 text-align: center;
 padding: 10px;
 color: black;
+}
+
+.voltar{
+  display: flex;
+  justify-content: end;
 }
 
 .copy-footer{
