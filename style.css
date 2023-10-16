@@ -264,7 +264,7 @@ header nav ul {
 }
 
 .manual-navigation{
-    position: absolute;
+    position: relative;
     width: 800px;
     margin-top: -40px;
     display: flex;
@@ -477,9 +477,7 @@ header nav ul {
         }*/        
 
 
-            visibility: none;
-            z-index: 11;
-        }*/
+        
 
         .topo {
             visibility: visible;

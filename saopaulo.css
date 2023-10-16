@@ -142,10 +142,12 @@
 }  
 
 .img-descricao{
-    display: table-column;
+    display: flex;
     float: right;
+    flex-direction: column;
     margin-left: 50px; 
-    padding-top: 50px;     
+    padding-top: 50px;
+    gap: 30PX;     
 }
 
 .paragrafo-descricao{
