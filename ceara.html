@@ -3,24 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ceara.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5cf9b42826.js" crossorigin="anonymous"></script>
     <title>Saboreie o Brasil - Ceará</title>
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header>
-        <div id="logo">
-            <img width="300" src="/imagens_index/img_1_index.jpg" alt="Logo do Site">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="/index.html" target="blank">Pagina Inicial</a></li>
-                <li><a href="/sao_paulo.html" target="blank">São Paulo</a></li>
-                <li><a href="#" target="blank">Minas Gerais</a></li>
-                <li><a href="/ceara.html" target="blank">Ceára</a></li>
-                <li><a href="/rio_grande_do_sul.html" target="blank">Rio Grande do Sul</a></li>
-                <li><a href="/pernambuco.html" target="blank">Pernambuco</a></li>
-            </ul>
-        </nav>
+    <header id="topo">         
+        <div id="logo">            
+            <div class="container"> <!--vai servir para delimitar a distância entre o lado direito e esquerdo -->
+                <div class="logo"><img src="/img/logo1.jpg" alt="logo site"></div>
+                  <nav>
+                    <ul>
+                      <li>
+                            <a href="/index.html">Home</a>
+                      </li>
+                        
+                      <li class="dropdown-guia">
+                        <a href="#">Guia Gastronômico</a>
+                        <div class="dropdown-estados">
+                          <a href="#">Ceará</a>     
+                          <a href="/minas_gerais.html">Minas Gerais</a>
+                          <a href="#">Pernambuco</a>
+                          <a href="/rio_grande_do_sul.html">Rio Grande do Sul</a>
+                          <a href="#">São Paulo</a>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#">Guia de Restaurantes</a>
+                      </li>
+                      <li>
+                        <a href="#">Reservas</a>
+                      </li>
+                    </ul>
+                  </nav>
+                
+                  <div class="sociais">
+                      <button><i class="fa-brands fa-square-instagram"></i></button> <!--Será inserido os ícones da redes sociais-->
+                      <button><i class="fa-brands fa-youtube"></i></button>
+                      <button><i class="fa-brands fa-square-x-twitter"></i></button>
+                  </div>   
+                
+                  <div class="search-box">
+                    <input type="text" class="search-text" placeholder="O que você procura?">
+                    <a class="search-btn" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="#d79c8f" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </a>
+                  </div>
+                </div>
     </header>
     <!-- Conteúdo do Site -->
     <main>
@@ -33,9 +66,7 @@
                 <table>
                     <div>
                     <tr>
-                      <td><img  width="300" src='/img_ceara/baioao de dois 2.jpeg' alt="Foto da receita"/></td>
-                      
-                      <td> <p>
+                      <td><img  width="300" src='/img_ceara/baioao de dois 2.jpeg' alt="Foto da receita"/></td>                    
                     
                         <p>A gastronomia do Estado do Ceará é uma verdadeira celebração de sabores e tradições que refletem a riqueza cultural e geográfica da região. Localizado no nordeste do Brasil, o Ceará é famoso por sua culinária única, que combina influências indígenas, africanas e portuguesas em pratos deliciosos e autênticos.
                             <br>
@@ -114,10 +145,38 @@
             </main>
         
             <!-- Rodapé -->
-            <footer>
-                <div id="footer-content">
-                    <p>&copy; 2023 Nosso Site - Todos os direitos reservados.</p>
-                </div>
-            </footer>
+    <footer>
+        <div>
+            <h2>Responsáveis Técnicos</h2>
+        </div>
+        <section id="integrantes">
+            <div class="integrante">
+                <img class="zoomable" src="img_minas_gerais/sem-foto.png" alt="Integrante 1">
+                <p>Caic Rangel</p>
+            </div>
+            <div class="integrante">
+                <img class="zoomable" src="img_minas_gerais/sem-foto.png" alt="Integrante 2">
+                <p>Carlos</p>
+            </div>
+            <div class="integrante">
+                <img class="zoomable" src="./img_ceara/FOTO Noemi.jpg" alt="Integrante 3">
+                <p>Noemi</p>
+            </div>
+            <div class="integrante">
+                <img class="zoomable" src="img_minas_gerais/sem-foto.png" alt="Integrante 4">
+                <p>Raquel</p>
+            </div>
+            <div class="integrante">
+                <img class="zoomable" src="img_minas_gerais/sem-foto.png" alt="Integrante 5">
+                <p>Anderson</p>
+            </div>
+            <div class="voltar">
+              <a href="#topo"><img src="img_minas_gerais/voltar-topo.png" alt="voltar"></a>
+            </div>
+        </section>
+        <div class="copy-footer">
+            &copy;Saboreie o Brasil - 2023
+        </div>
+    </footer>
 </body>
 </html>
