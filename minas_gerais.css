@@ -37,6 +37,7 @@ header {
 
 .logo img {
   width: 200px;
+  
   border-radius: 50px;
 }
 
@@ -118,7 +119,7 @@ nav .dropdown-estados a::after {
 .search-box {
   position: absolute; /*Position absolute eu consigo colocar o elemento onde eu quiser*/
   top: 2%;
-  left: 57%;
+  left: 59%;
   transform: translate(-50% -50%);
   background: linear-gradient(45deg, #93b39e, #dbebe1);
   height: 40px;
