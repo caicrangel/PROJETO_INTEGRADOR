@@ -1,33 +1,42 @@
+const slider = document.querySelector(".slider");
+const radioButtons = document.querySelectorAll(".radio-button");
 
-let count = 1;
+let currentSlide = 0;
 
-function nextImage() {
-    count++;
-    if (count > 4) {
-        count = 1;
+function goToSlide(slideIndex) {
+    if (slideIndex < 0) {
+        slideIndex = radioButtons.length - 1;
+    } else if (slideIndex >= radioButtons.length) {
+        slideIndex = 0;
     }
 
-    document.getElementById("radio" + count).checked = true;
+    currentSlide = slideIndex;
+
+    const translateXValue = -slideIndex * 100;
+    slider.style.transform = `translateX(${translateXValue}%)`;
+
+    radioButtons.forEach((button, index) => {
+        button.classList.remove("active");
+        if (index === currentSlide) {
+            button.classList.add("active");
+        }
+    });
 }
 
-document.getElementById("radio1").checked = true;
+function nextSlide() {
+    goToSlide(currentSlide + 1);
+}
 
-setInterval(nextImage, 3000); // Mudei o intervalo para 3000ms (3 segundos)
+function previousSlide() {
+    goToSlide(currentSlide - 1);
+}
 
-/*Codigo Raquel avançando com clic*/
+// Automatic slider
+setInterval(nextSlide, 5000);
 
-// let count =1;
-// document.getElementsById("radio1").checked = true;
-
-// setInterval(function(){
-// },2000)
-
-
-// function nextImage(){
-//     count++;
-//     if(count>4){
-//         count = 1;
-//     }
-
-//     document.getElementsById("radio"+count).checked = true;
-// }
+// Add event listeners to radio buttons
+radioButtons.forEach((button, index) => {
+    button.addEventListener("click", () => {
+        goToSlide(index);
+    });
+});
