@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto; /*Centralizar a posição do container*/
+  display: flex; /*Atributo que ajudar na hora alinhar os elementos*/
+  padding: 30px; /*Espaçamento*/
+  align-items: center;
+  justify-content: center;
+}
+
+/*ESTILIZANDO O CABEÇALHO*/
+header {
+  background: linear-gradient(to bottom,rgb(240, 239, 239), white);
+  width: 100%;
+  height: 150px;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px; /* Altura da borda */
+  background: linear-gradient(90deg, transparent, #d79c8f, transparent); /* Efeito de gradiente na borda */
+  bottom: 0;
+  left: 0;
+}
+
+/*Logo e sociais*/
+.logo,
+.sociais {
+  width: 25%;
+}
+
+.logo img {
+  width: 200px;
+  border-radius: 50px;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  color: #d79c8f;
+  font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: #93b39e;
+}
+
+nav ul li a::after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 6px;
+    border-radius: 200px;
+    background: #d79c8f;
+    transition: all 0.2s ease;     
+}
+
+nav ul li a:hover::after{
+    width: 60%;
+    height: 6px;
+}
+
+/*Estilizando menu dropdown dos estados*/
+nav .dropdown-estados a::after {
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-radius: 200px;
+  background-color: #d79c8f;
+  transition: all 0.2s ease;
+}
+
+.dropdown-estados {
+  position: absolute;
+  display: none;
+  background-color: white;
+}
+
+.dropdown-estados a {
+  display: block;
+  color: #d79c8f;
+}
+
+.dropdown-guia:hover .dropdown-estados {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  
+}
+
+/*Estilizando  os ícones de rede sociais*/
+.sociais button {
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(45deg, #93b39e, #dbebe1);
+  border: none;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sociais button i {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+
+/*Estilizando barra de pesquisa*/
+.search-box {
+  position: absolute; /*Position absolute eu consigo colocar o elemento onde eu quiser*/
+  top: 2%;
+  left: 59%;
+  transform: translate(-50% -50%);
+  background: linear-gradient(45deg, #93b39e, #dbebe1);
+  height: 40px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between; /*justify-content é o alinhamento horizontal*/
+  align-self: center; /*align-items alinhamento vertical*/
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+  color: #f0f5fb;
+  font-size: 16px;
+  line-height: 40px;
+  width: 240px;
+}
+/* ========== Estruturando o body ========== */
+
+.slider-container {
+  position: relative;
+  max-width: 1000px;
+  max-height: 300px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+}
+
+.radio-buttons {
+  text-align: center;
+}
+
+.radio-button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #888;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.radio-button.active {
+  background-color: #333;
+}
+
+
+/* ========== Fim do boby ========== */
+
+/*Edições para footer*/
+
+/* Estilos para a seção de integrantes */
+#integrantes {
+display: flex;
+flex-wrap: nowrap; 
+justify-content: space-between;
+align-items: center;
+width: 100%;
+padding: 20px;
+
+}
+
+.integrante {
+width: 20%;
+text-align: center;
+color: black;
+}
+
+.integrante img {
+width: 70px;
+height: 70px;
+border-radius: 50%;
+}
+
+/* Estilos para o rodapé */
+footer {
+text-align: center;
+padding: 10px;
+color: black;
+}
+
+.voltar{
+  display: flex;
+  justify-content: end;
+}
+
+.copy-footer{
+color: black;
+}
+
+/* Estilos para as imagens com efeito de zoom */
+.zoomable {
+transition: transform 0.3s; /* Adiciona uma transição suave para o efeito de escala */
+}
+
+/* Adiciona o efeito de escala ao passar o mouse */
+.zoomable:hover {
+transform: scale(1.2); /* Amplia a imagem em 20% */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
