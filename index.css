@@ -100,7 +100,7 @@ nav .dropdown-estados a::after {
   display: flex;
   flex-direction: column;
   z-index: 999;
-  
+  border-radius: 5px;  
 }
 
 /*Estilizando  os ícones de rede sociais*/
