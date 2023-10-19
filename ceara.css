@@ -158,11 +158,11 @@ body{
     padding-top: 50px;     
   }
   
-  p{
-  width: 700px;  
-  display: table-cell;
-  text-align: justify;
-  }
+  .paragrafo-descricao{
+    width: 700px;  
+    display: table-cell;
+    text-align: justify;
+    }
   
   .paragrafo-descricao h1{
   text-align: center;
