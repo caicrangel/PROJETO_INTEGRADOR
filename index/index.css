@@ -183,8 +183,37 @@ nav .dropdown-estados a::after {
 
 .radio-button.active {
   background-color: #333;
+
 }
 
+#destaqueEstado{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.estadoDestaque{
+width: 20%;
+text-align: center;
+color: black;
+}
+
+.estadoDestaque img{
+width: 70px;
+height: 70px;
+border-radius: 50%;
+}
+
+.bola{
+transition: transform 0.3s;
+}
+  
+.bola:hover{
+transform: scale(1.2);
+}
 
 /* ========== Fim do boby ========== */
 
@@ -227,6 +256,14 @@ color: black;
 
 .copy-footer{
 color: black;
+}
+
+.bola{
+transition: transform 0.3s;
+}
+
+.bola:hover{
+transform: scale(1.2);
 }
 
 /* Estilos para as imagens com efeito de zoom */
