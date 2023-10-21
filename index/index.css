@@ -183,8 +183,101 @@ nav .dropdown-estados a::after {
 
 .radio-button.active {
   background-color: #333;
+
 }
 
+/* Estilizando hitória da culinaria no brasil*/
+
+.histbra{
+  max-width: 1080px;
+  margin: auto;
+  display: table;
+  padding: 40px;
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.imghis{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.img-his{
+  border-radius: 10px;
+}
+
+.descricaohist{
+width: 700px;
+display: table-cell;
+text-align: justify;
+margin-top: 250px;
+}
+
+.descricaohist h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.descricaohist h2{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fim estilização historia da culinaria no brasil*/
+
+/*Estilização Estados em Destaque */
+.destak{
+  max-width: 1080px;
+  margin: auto;
+  display: table;
+  padding: 40px;
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.destak h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+#destaqueEstado{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.estadoDestaque{
+width: 20%;
+text-align: center;
+color: black;
+}
+
+.estadoDestaque img{
+width: 70px;
+height: 70px;
+border-radius: 50%;
+}
+
+.bola{
+transition: transform 0.3s;
+}
+  
+.bola:hover{
+transform: scale(1.2);
+}
 
 /* ========== Fim do boby ========== */
 
@@ -227,6 +320,14 @@ color: black;
 
 .copy-footer{
 color: black;
+}
+
+.bola{
+transition: transform 0.3s;
+}
+
+.bola:hover{
+transform: scale(1.2);
 }
 
 /* Estilos para as imagens com efeito de zoom */
