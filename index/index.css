@@ -186,6 +186,70 @@ nav .dropdown-estados a::after {
 
 }
 
+/* Estilizando hitória da culinaria no brasil*/
+
+.histbra{
+  max-width: 1080px;
+  margin: auto;
+  display: table;
+  padding: 40px;
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.imghis{
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.img-his{
+  border-radius: 10px;
+}
+
+.descricaohist{
+width: 700px;
+display: table-cell;
+text-align: justify;
+margin-top: 250px;
+}
+
+.descricaohist h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.descricaohist h2{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Fim estilização historia da culinaria no brasil*/
+
+/*Estilização Estados em Destaque */
+.destak{
+  max-width: 1080px;
+  margin: auto;
+  display: table;
+  padding: 40px;
+  padding-top: 100px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.destak h1{
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 #destaqueEstado{
   display: flex;
   flex-wrap: nowrap;
