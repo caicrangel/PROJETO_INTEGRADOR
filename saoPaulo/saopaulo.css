@@ -196,12 +196,15 @@ nav .dropdown-restaurantes a::after{
   float: right;
   margin-left: 50px;
   margin-top: 50px;
-  gap: 30px;     
+  gap: 30px;
 }
 
 .img-desc{
   border-radius: 10px;
+  background-image: url(/saoPaulo/imgSaoPaulo/fundo.png);
 }
+
+
 
 .paragrafo-descricao{
 width: 700px;  
@@ -244,7 +247,9 @@ box-sizing: border-box;
 
 .img-culi{
 border-radius: 10px;
+
 }
+
 
 .paragrafo-culinaria{
 width: 500px;  
