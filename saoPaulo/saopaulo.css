@@ -45,7 +45,7 @@ header::before{
 }
 
 .logo img {
-  width: 200px;
+  width: 150px;
   border-radius: 50px;
 }
 
@@ -62,7 +62,7 @@ nav li a {
 }
 
 nav ul li a:hover{
-    color: #93b39e;
+    color: #d79c8f;
 }
 
 nav ul li a::after{
@@ -106,11 +106,41 @@ nav .dropdown-estados a::after {
   display: block;
 }
 
+/* Estilizando o dropdown dos restaurantes*/
+nav .dropdown-restaurantes a::after{
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-radius: 200px;
+  background-color: #d79c8f;
+  transition: all 0.2s ease;
+}
+
+.dropdown-restaurantes{
+  position: absolute;
+  display: none;
+  background-color: white;  
+}
+
+.dropdown-restaurantes a {
+  display: block;
+  color: #d79c8f;  
+}
+
+.dropdown-guia:hover .dropdown-restaurantes{
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  border-radius: 5px;
+}
+
+
 /*Estilizando  os ícones de rede sociais*/
 .sociais button {
-  width: 40px;
-  height: 40px;
-  background-image: linear-gradient(45deg, #93b39e, #dbebe1);
+  width: 30px;
+  height: 30px;
+  background-image: linear-gradient(45deg, #d79c8f, #dbebe1);
   border: none;
   margin-right: 10px;
   border-radius: 8px;
@@ -129,7 +159,7 @@ nav .dropdown-estados a::after {
   top: 2%;
   left: 57%;
   transform: translate(-50% -50%);
-  background: linear-gradient(45deg, #93b39e, #dbebe1);
+  background: linear-gradient(45deg, #d79c8f, #dbebe1);
   height: 40px;
   padding: 10px;
   border-radius: 40px;
@@ -144,7 +174,7 @@ nav .dropdown-estados a::after {
   outline: none;
   padding: 0;
   color: #f0f5fb;
-  font-size: 16px;
+  font-size: 14sspx;
   line-height: 40px;
   width: 240px;
 }
