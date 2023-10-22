@@ -11,7 +11,7 @@
   display: flex; /*Atributo que ajudar na hora alinhar os elementos*/
   padding: 30px; /*Espaçamento*/
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /*ESTILIZANDO O CABEÇALHO*/
@@ -38,8 +38,9 @@ header::before {
   width: 25%;
 }
 
+
 .logo img {
-  width: 200px;
+  width: 150px;
   border-radius: 50px;
 }
 
