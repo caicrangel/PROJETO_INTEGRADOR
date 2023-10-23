@@ -135,6 +135,34 @@ nav .dropdown-restaurantes a::after{
   border-radius: 5px;
 }
 
+/*Estilizando dropdown das Reservas*/
+nav .reservas a::after{
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-radius: 200px;
+  background-color: #d79c8f;
+  transition: all 0.2s ease;
+}
+
+.reservas{
+  position: absolute;
+  display: none;
+  background-color: white;  
+}
+
+.reservas a {
+  display: block;
+  color: #d79c8f;  
+}
+
+.dropdown-reservas:hover .reservas{
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  border-radius: 5px;
+}
 
 /*Estilizando  os ícones de rede sociais*/
 .sociais button {
@@ -187,7 +215,7 @@ nav .dropdown-restaurantes a::after{
   padding: 40px; /*Espaçamento*/
   padding-top: 100px;
   font-family: 'Montserrat', sans-serif;
-}  
+}
 
 
 .img-descricao{
@@ -196,12 +224,14 @@ nav .dropdown-restaurantes a::after{
   float: right;
   margin-left: 50px;
   margin-top: 50px;
-  gap: 30px;     
+  gap: 30px;
 }
 
 .img-desc{
   border-radius: 10px;
 }
+
+
 
 .paragrafo-descricao{
 width: 700px;  
@@ -244,7 +274,9 @@ box-sizing: border-box;
 
 .img-culi{
 border-radius: 10px;
+
 }
+
 
 .paragrafo-culinaria{
 width: 500px;  
