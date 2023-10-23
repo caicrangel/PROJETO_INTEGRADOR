@@ -326,6 +326,9 @@ transform: scale(1.2);
   align-items: center;
   flex-direction: column;
 }
+
+
+
 #integrantes {
 display: flex;
 flex-wrap: nowrap; 
@@ -333,7 +336,6 @@ justify-content: space-between;
 align-items: center;
 width: 100%;
 padding: 20px;
-
 }
 
 .integrante {
@@ -405,10 +407,16 @@ footer .rodape h3{
   font-weight: 600;
 }
 
-footer .rodape .redes-sociais button{
+footer .rodape .redes-sociais i{
   margin-right: 10px;
-  width: 30px;
-  height: 30px;
+  width: 50px;
+  height: 50px;
+ /* background-image: linear-gradient(45deg, #d79c8f, #dbebe1);*/
+ border: none;
+ margin-right: 10px;
+ border-radius: 8px;
+ cursor: pointer;
+ border: #888;
 }
 
 footer .rodape ul >p{
