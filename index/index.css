@@ -318,6 +318,14 @@ transform: scale(1.2);
 /*Edições para footer*/
 
 /* Estilos para a seção de integrantes */
+
+.integ{
+  display:flex;
+  flex-wrap:nowrap ;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
 #integrantes {
 display: flex;
 flex-wrap: nowrap; 
@@ -399,6 +407,8 @@ footer .rodape h3{
 
 footer .rodape .redes-sociais button{
   margin-right: 10px;
+  width: 30px;
+  height: 30px;
 }
 
 footer .rodape ul >p{
