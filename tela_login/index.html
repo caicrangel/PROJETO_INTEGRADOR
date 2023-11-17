@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <title>Login</title>
+</head>
+<body>
+
+  <!-- <button onclick="mostrarFormulario()">Cadastrar</button> -->
+  <main>
+      <section>
+        <img src="img/logo.png" alt="logo tela login">
+        <form action="" id="form1">
+          <div id="divinputlabel">
+            <label class="label1" for="login-usuario">Usuário:</label>
+            <input type="text" id="login-usuario" name="login-usuario">
+            <p id="userInvalido"></p>
+            <label class="label1" for="login-senha">Senha:</label>
+            <input type="password" id="login-senha" name="login-senha" >
+            <p id="senhaIncorreta"></p>
+          </div>
+        </form>
+        <div id="botoes">
+          <button id="bot1" type="button">Fazer login</button>
+          <a id="cadastrar" href="#" onclick="mostrarFormulario()">Cadastrar</a>
+        </div>
+    </section>
+  </main>
+
+  <div id="overlay">
+    <div id="form-container">
+      <form action="" id="form-cadastro">
+        <h2>Formulário de cadastro</h2>
+        <label for="username">*Username:</label>
+        <input type="text" id="username" name="username">
+        <p id="username-helper" class="helper-text"></p>
+    
+        <label for="email">*E-mail:</label>
+        <input type="email" id="email" name="email">
+        <p id="email-helper" class="helper-text"></p>
+    
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade">
+        <p id="idade-helper" class="helper-text"></p>
+    
+        <label for="senha">*Senha:</label>
+        <input type="password" id="senha" name="senha">
+        <p id="senha-helper" class="helper-text"></p>
+    
+        <label for="confirma-senha">*Confirmar senha:</label>
+        <input type="password" id="confirma-senha" name="confirma-senha">
+        <p id="senha-helper2" class="helper-text"></p>
+    
+        <div id="botoes">
+          <button id="enviar" type="submit" disabled>Enviar</button>
+          <button onclick="fecharFormulario()">Fechar</button>
+        </div>
+      </form>
+
+        <!-- <button onclick="enviarFormulario()">Enviar</button> -->
+
+        
+    </div>
+</div>
+
+</body>
+</html>
