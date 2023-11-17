@@ -1,3 +1,4 @@
+//Bloco de codigo para carrousel de imagens
 const slider = document.querySelector(".slider");
 const radioButtons = document.querySelectorAll(".radio-button");
 
@@ -40,3 +41,4 @@ radioButtons.forEach((button, index) => {
         goToSlide(index);
     });
 });
+// =========== Fim do carrousel ============
