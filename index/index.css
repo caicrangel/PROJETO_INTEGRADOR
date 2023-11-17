@@ -19,7 +19,7 @@ header {
   background: linear-gradient(to bottom,rgb(240, 239, 239), white);
   width: 100%;
   height: 150px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   position: relative;
 }
 header::before {
@@ -155,7 +155,7 @@ nav .dropdown-restaurantes a::after{
 .search-box {
   position: absolute; /*Position absolute eu consigo colocar o elemento onde eu quiser*/
   top: 2%;
-  left: 57%;
+  left: 60%;
   transform: translate(-50% -50%);
   background: linear-gradient(45deg, #d79c8f, #dbebe1);
   height: 40px;
@@ -227,6 +227,9 @@ nav .dropdown-restaurantes a::after{
   padding-top: 100px;
   font-family: 'Montserrat', sans-serif;
 }
+.histbra p {
+  padding-top: 20px;
+}
 
 .imghis{
   display: flex;
@@ -237,7 +240,8 @@ nav .dropdown-restaurantes a::after{
 }
 
 .img-his{
-  border-radius: 10px;
+  border-radius: 20px;
+  padding: 10px;
 }
 
 .descricaohist{
