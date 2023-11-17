@@ -15,8 +15,6 @@ main {
   width: 600px;
   background-color: rgb(231, 230, 230);
   margin: auto;
-  margin-top: 200px;
-  margin-bottom: 200px;
   border-radius: 16px;
   box-shadow: 11px 14px 46px -11px rgba(0,0,0,0.73);
   -webkit-box-shadow: 11px 14px 46px -11px rgba(0,0,0,0.73);
