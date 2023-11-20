@@ -11,6 +11,13 @@ let bdUser = [
 
 // Validando os dados de login de acordo com a array
 const btnFazerLogin = document.getElementById('bot1')
+
+document.addEventListener('keyup',(e)=>{
+	if (e.key === 'Enter') {
+		btnFazerLogin.click()
+	}
+})
+
 btnFazerLogin.addEventListener('click',()=>{
 	
 	const textUserInvalido = document.getElementById('userInvalido')
@@ -29,10 +36,12 @@ btnFazerLogin.addEventListener('click',()=>{
 			}
   	}
 
-	if (inputUser === '' || inputPass === '') {
+	if (inputUser === '') {
 		// alert('Usuário ou senha vazios!');
 		textUserInvalido.innerText = 'Campo obrigatório!'
 		textUserInvalido.style.color = 'red'
+	}	if (inputPass === '') {
+		// alert('Usuário ou senha vazios!');
 		textSenhaInvalido.innerText = 'Campo obrigatório!'
 		textSenhaInvalido.style.color = 'red'
 	}else if (credenciaisValidas) {
@@ -234,9 +243,9 @@ function bloqueiaEnter(input){
 					senhaHelp.classList.add('visible')
 					senhaHelp.innerText = `Requisitos de senha:
 	
-					8 Caracter ou mais
+					8 Caracteres ou mais
 					1 Letra maiúscula
-					1 Caracter especial
+					1 Caractere especial
 					`
 					confirmSenhaLabel.style.display = 'none'
 					confirmSenhaInput.style.display = 'none'
