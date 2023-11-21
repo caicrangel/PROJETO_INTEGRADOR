@@ -45,7 +45,7 @@ btnFazerLogin.addEventListener('click',()=>{
 		textSenhaInvalido.innerText = 'Campo obrigatório!'
 		textSenhaInvalido.style.color = 'red'
 	}else if (credenciaisValidas) {
-		window.location.href = 'reserva.html';
+		window.location.href = '../tela_reserva_restaurante/index.html'
 	}else{
 		let inputUser = document.getElementById('login-usuario')
 		inputUser.value = ''
