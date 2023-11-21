@@ -199,10 +199,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const btnSair = document.getElementById('menu-sair');
 
   btnSair.addEventListener('click', function () {
-    // Adicione aqui o código para lidar com a ação de sair
-    console.log('Usuário clicou em sair');
-
-    // Exemplo: redirecionar para a página de login
-    window.location.href = 'pagina-de-login.html';
+    window.location.href = '../tela_login/index.html';
   });
 });
