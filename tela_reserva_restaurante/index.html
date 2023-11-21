@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <script src="script.js" defer></script>
+    <title>Reserva de Restaurantes</title>
+</head>
+<body>
+    <header>
+      <div id="logo-sair">
+        <img id="logo" src="img-restaurantes/logo.png" alt="logo do site">
+      </div>
+    </header>
+
+    <div class="menu">
+      <ul>
+        <li id="menu-sair">
+          <i class="fas fa-door-open"></i> Sair
+        </li>
+      </ul>
+    </div>
+
+  <section id="restaurant-list-section">
+    <h2>Lista de Restaurantes</h2>
+    <ul id="restaurant-list">
+        <!-- Os restaurantes serão adicionados dinamicamente aqui -->
+    </ul>
+  </section>
+
+
+  <div id="reservation-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Carrinho de compras</h2>
+        <section id="carrinho">
+          <div class="item-carrinho" id="produto-01">
+            <!-- Carrinho será exibido dinamicamente aqui -->
+          </div>
+        </section>
+        <h2>Subtotal</h2>
+        <section id="subtotal">
+          <p><span id="quantidade-subtotal">0</span></p>
+          <p>R$ <span id="valor-subtotal">0</span></p>
+      </section>
+      <div id="bot-reservar">
+        <button id="btn-reservar">RESERVAR</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="caixa" id="reservaConcluidaCaixa">
+    <div class="caixa-content">
+      <span class="close" onclick="fecharCaixa()">&times;</span>
+      <p>Sua reserva foi concluída! Aguardamos você &#x1F600 </p>
+      <div id="resumo">
+
+      </div>
+    </div>
+  </div>
+
+   
+<section id="gradient-section">
+  <div class="gradient-line"></div>
+</section>
+
+    <section id="add-restaurant-form">
+      <h2>Adicionar Novo Restaurante</h2>
+      <form id="restaurant-form" enctype="multipart/form-data">
+          <label for="restaurant-name">Nome do Restaurante:</label>
+          <input type="text" id="restaurant-name" name="restaurantName" required>
+
+          <label for="restaurant-description">Descrição:</label>
+          <textarea id="restaurant-description" name="restaurantDescription" required></textarea>
+
+          <label for="restaurant-photo">Foto:</label>
+          <input type="file" id="restaurant-photo" name="restaurantPhoto">
+
+          <label for="restaurant-location">Localização:</label>
+          <input type="text" id="restaurant-location" name="restaurantLocation" required>
+
+          <button type="submit">Adicionar Restaurante</button>
+      </form>
+  </section>
+  
+     
+   
+  <section id="carousel-container">
+    <button id="prevBtn" onclick="changeRestaurant(-1)">❮</button>
+    <div id="restaurant-carousel">
+        <!-- Cards dos restaurantes serão exibidos aqui -->
+    </div>
+    <button id="nextBtn" onclick="changeRestaurant(1)">❯</button>
+</section>
+
+</body>
+</html>

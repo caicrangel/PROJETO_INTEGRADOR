@@ -1,0 +1,369 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: linear-gradient(to bottom,rgb(240, 239, 239), white);
+  padding: 5px;
+  height: 115px;
+  position: relative;
+}
+header::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px; /* Altura da borda */
+  background: linear-gradient(90deg, transparent, #d79c8f, transparent); /* Efeito de gradiente na borda */
+  bottom: 0;
+  left: 0;
+}
+
+header #logo-sair{
+  display: flex;
+  justify-content: center;
+}
+
+
+#logo{
+  width: 200px;
+  height: 120px;
+}
+
+section {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+img{
+  width: 450px;
+  height: 350px;
+}
+
+
+
+/* Adiciona estilos para o carrossel */
+#carousel-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+#restaurant-carousel {
+  display: flex;
+  margin: 10px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.restaurant-card {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 15px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Adiciona estilos para os botões do carrossel */
+#prevBtn, #nextBtn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+#carousel-container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px; /* Adicionei um espaço entre o carrossel e o formulário */
+}
+
+#restaurant-carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  position: relative; /* Adicionei uma posição relativa */
+}
+
+#prevBtn, #nextBtn {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1; /* Definindo uma ordem de camada para ficar acima do carrossel */
+}
+
+#prevBtn {
+  left: 0;
+}
+
+#nextBtn {
+  right: 0;
+}
+
+
+
+/* CSS container do carrinho */
+
+/* Estilos para abertura do carrinho */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+#restArray{
+  border-radius: 15px;
+  width: 250px;
+  height: 150px;
+}
+
+#restaurant-list {
+    display: grid;
+    justify-content: space-between;
+    border-radius: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#restaurant-list li {
+    width: 300px; /* Ou ajuste conforme necessário */
+    margin: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+}
+
+#bot-reservar{
+  display: flex;
+  justify-content: center;
+}
+
+/* Formatação da linha que divide o site */
+
+.gradient-line {
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, white, #d79c8f);
+  margin: 20px 0;
+}
+
+
+/* CSS do carrinho */
+
+#carrinho {
+  display: flex;
+}
+
+.item-carrinho {
+  background-color: #d79c8f;
+  padding-top: 20px;
+  padding-left: 45px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.capa {
+  width: 250px;
+  height: 150px;
+  border-radius: 15px;
+  background-color: lightgray;
+  position: relative;
+}
+
+.capa::after {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.inputCarrinho {
+  width: 40px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+#data-selecionada{
+  width: 150px;
+  border-radius: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#subtotal {
+  font-size: 1.2rem;
+  padding: 0;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/* Estilo da caixa de reserva concluída */
+
+.caixa {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9); /* Fundo semitransparente */
+  backdrop-filter: blur(5px); /* Efeito de desfoque */
+  z-index: 9999;
+  text-align: center;
+}
+
+.caixa-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: solid black 2px;
+  border-radius: 10px;
+}
+
+.caixa .close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.caixa .close:hover,
+.caixa .close:focus {
+  color: black;
+}
+
+
+/* Estilização do botão sair */
+
+.menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #333; /* Cor de fundo do menu */
+  border-radius: 20px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: none; /* Oculta por padrão */
+  cursor: pointer;
+  color: #fff; /* Cor do texto */
+}
+
+.menu:hover li {
+  display: block; /* Exibe ao passar o mouse no menu */
+}
+
+/* .menu li:hover {
+  background-color: #555; 
+} */
