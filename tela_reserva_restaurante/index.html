@@ -96,7 +96,23 @@
         <!-- Cards dos restaurantes serão exibidos aqui -->
     </div>
     <button id="nextBtn" onclick="changeRestaurant(1)">❯</button>
-</section>
+  </section>
+
+  <section id="gradient-section">
+    <div class="gradient-line"></div>
+  </section>
+
+  <section id="secao-comentarios">
+    <h2>Comentários</h2>
+    <div id="container-comentarios"></div>
+    <form id="formulario-comentario">
+        <label for="nome">Seu Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="comentario">Seu Comentário:</label>
+        <textarea id="comentario" name="comentario" rows="4" required></textarea>
+        <button type="button" onclick="adicionarComentario()">Adicionar Comentário</button>
+    </form>
+  </section>
 
 </body>
 </html>
