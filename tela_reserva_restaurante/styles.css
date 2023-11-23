@@ -379,9 +379,9 @@ input::-webkit-inner-spin-button {
 
 /* Estilização dos comentários */
 
-#secao-comentarios {
+/* #secao-comentarios { */
   /* margin: 20px 0; */
-}
+/* } */
 
 .comentario {
   margin-bottom: 10px;
