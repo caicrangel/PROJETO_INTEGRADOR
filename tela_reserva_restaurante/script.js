@@ -54,6 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 document.addEventListener('DOMContentLoaded', function () {
+
+  // Adiciona uma tag meta para desabilitar o cache
+  const metaTag = document.createElement('meta');
+  metaTag.httpEquiv = 'cache-control';
+  metaTag.content = 'no-store';
+  document.head.appendChild(metaTag);
+
   const restaurantList = document.getElementById('restaurant-list');
 
   // Preencher a lista de restaurantes
@@ -168,6 +175,12 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+  const containerComentarios = document.getElementById('container-comentarios');
+  const comentariosIniciais = [
+      { nome: 'João', comentario: 'Ótimo restaurante!' },
+      { nome: 'Maria', comentario: 'Adorei a comida e o ambiente.' }
+  ];
+  comentariosIniciais.forEach(comentario => adicionarComentarioAoContainer(comentario, containerComentarios));
 });
 
 
@@ -201,4 +214,49 @@ document.addEventListener('DOMContentLoaded', function () {
   btnSair.addEventListener('click', function () {
     window.location.href = '../tela_login/index.html';
   });
+});
+
+// Funções comentarios
+
+function adicionarComentario() {
+  const nomeInput = document.getElementById('nome');
+  const comentarioInput = document.getElementById('comentario');
+  const containerComentarios = document.getElementById('container-comentarios');
+
+  const nome = nomeInput.value;
+  const comentario = comentarioInput.value;
+
+  if (nome && comentario) {
+      const novoComentario = { nome, comentario };
+      adicionarComentarioAoContainer(novoComentario, containerComentarios);
+
+      // Limpa os campos do formulário
+      nomeInput.value = '';
+      comentarioInput.value = '';
+  }
+}
+
+function adicionarComentarioAoContainer(comentario, container) {
+  const divComentario = document.createElement('div');
+  divComentario.classList.add('comentario');
+
+  const nomeParagrafo = document.createElement('p');
+  nomeParagrafo.classList.add('nome-comentario');
+  nomeParagrafo.textContent = comentario.nome;
+
+  const comentarioParagrafo = document.createElement('p');
+  comentarioParagrafo.classList.add('texto-comentario');
+  comentarioParagrafo.textContent = comentario.comentario;
+
+  divComentario.appendChild(nomeParagrafo);
+  divComentario.appendChild(comentarioParagrafo);
+  container.appendChild(divComentario);
+}
+
+// Adiciona um redirecionamento para a página de login após o logout
+document.getElementById('menu-sair').addEventListener('click', function () {
+  // Adiciona uma nova entrada no histórico
+  history.pushState({}, '', '../tela_login/index.html');
+  // Redireciona para '../tela_login/index.html'
+  window.location.href = '../tela_login/index.html';
 });
