@@ -167,13 +167,20 @@ img{
 }
 
 .modal-content {
-
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
   position: relative;
   width: 80%;
   max-width: 400px;
+  max-height: 95vh; /* Ajusta a altura máxima para 90% da altura da tela */
+  overflow-y: auto; /* Adiciona uma barra de rolagem se necessário */
+}
+
+@media screen and (max-width: 400px) {
+  .modal-content {
+      width: 90%;
+  }
 }
 
 .close {
