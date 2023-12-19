@@ -462,15 +462,23 @@ footer .rodape h3{
   font-weight: 600;
 }
 
+.redes-sociais{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  
+}
+
 footer .rodape .redes-sociais i{
   margin-right: 10px;
   width: 50px;
   height: 50px;
- /* background-image: linear-gradient(45deg, #d79c8f, #dbebe1);*/
- border: none;
- margin-right: 10px;
- border-radius: 8px;
- cursor: pointer;
+  border: none;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  border: #888;
 }
 
 footer .rodape ul >p{
@@ -482,4 +490,5 @@ footer .rodape li{
 
 footer .rodape a{
   color: white;
+  text-decoration: none;
 }
