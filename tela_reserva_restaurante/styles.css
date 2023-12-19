@@ -199,25 +199,30 @@ img{
 }
 
 #restaurant-list {
-    display: grid;
-    justify-content: space-between;
-    border-radius: 15px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 #restaurant-list li {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    margin: 10px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Isso alinha os filhos verticalmente */
+  width: 280px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+
+
+#restaurant-list li p{
+    text-align: center;
 
 }
 
