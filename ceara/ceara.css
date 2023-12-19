@@ -5,6 +5,9 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: #f7f7f7;
+}
 
 
 .container {
@@ -13,29 +16,26 @@
   display: flex; /*Atributo que ajudar na hora alinhar os elementos*/
   padding: 30px; /*Espaçamento*/
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /*ESTILIZANDO O CABEÇALHO*/
 header {
-  /* background-color: lightgrey */
-  background: linear-gradient(to bottom,rgb(240, 239, 239), white); 
-  position: sticky;
+  background: linear-gradient(to bottom,rgb(240, 239, 239), #f2f2f2);
   width: 100%;
   height: 150px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
-header::before{
+header::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, transparent, #d79c8f, transparent);
+  height: 5px; /* Altura da borda */
+  background: linear-gradient(90deg, transparent, #d79c8f, transparent); /* Efeito de gradiente na borda */
   bottom: 0;
   left: 0;
-
-
 }
 
 /*Logo e sociais*/
