@@ -44,12 +44,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // Simulação de dados fictícios de restaurantes
   const restaurantes = [
-    { id:'0001', nome: 'Xapuri', descricao: 'Culinária mineira tradicional preparada em forno à lenha com opções à la carte em ambiente rústico familiar.', foto: '../tela_reserva_restaurante/img-restaurantes/xapuri.jpeg', localizacao: 'Endereço: Rua Mandacarú, 260 - Loja 1 - Trevo, Belo Horizonte - MG, 31370-270', url: 'https://maps.app.goo.gl/SSMGVPLkbhkaJSmY9' , valor: 70 },
+    { id:'0001', nome: 'Xapuri', descricao: 'Culinária mineira tradicional preparada em forno à lenha.', foto: '../tela_reserva_restaurante/img-restaurantes/xapuri.jpeg', localizacao: 'Endereço: Rua Mandacarú, 260 - Loja 1 - Trevo, Belo Horizonte - MG, 31370-270', url: 'https://maps.app.goo.gl/SSMGVPLkbhkaJSmY9' , valor: 70 },
     { id:'0002', nome: 'Ponto do Baião', descricao: 'Tem mesas externas · Bom para assistir a esportes', foto: '../tela_reserva_restaurante/img-restaurantes/ponto_do_baiao.jpg', localizacao: 'Rua VII, 229 - Quintino Cunha, Fortaleza - CE, 60351-770', url:'https://maps.app.goo.gl/ePuGmd7XmPHCNGkP9', valor: 40 },
-    { id:'0003', nome: 'Parraxaxa', descricao: 'A cozinha do Nordeste, da carne de sol e do feijão verde, servida em ambiente com temas e música regional.', foto: '../tela_reserva_restaurante/img-restaurantes/parraxaxa.png', localizacao: 'R. Igarassu, 40 - Casa Forte, Recife - PE, 52060-400', url:'https://maps.app.goo.gl/RU3AVNJZdU9Wfv5w8', valor: 80 },
-    { id:'0004', nome: 'Pão de Queijaria', descricao: 'Local animado com mesas na calçada e especialização em variações de pão de queijo.', foto: '../tela_reserva_restaurante/img-restaurantes/pao-de-queijaria-savassi.png', localizacao: 'R. Antônio de Albuquerque, 856 - Funcionários, Belo Horizonte - MG, 30112-011', url:'https://maps.app.goo.gl/gSTCG2x1846nUwqm7', valor: 100 },
-    { id:'0005', nome: 'Bar da Dona Onça', descricao: 'Restaurante tradicional, charmoso e com iluminação suave que serve pratos variados no Edifício Copan.', foto: '../tela_reserva_restaurante/img-restaurantes/bar_da_dona_onça.jpg', localizacao: 'Edifício Copan - Av. Ipiranga, 200 - 27 e 29 - Centro Histórico de São Paulo, São Paulo - SP, 01046-925', url:'https://maps.app.goo.gl/Kwx5qA4P1QowmBaN7', valor: 50 },
-    { id:'0006', nome: 'Caipira Xique', descricao: 'Porções e pratos típicos da cozinha mineira em casa rústica com decoração campestre, plantas e cozinha aberta.', foto: '../tela_reserva_restaurante/img-restaurantes/caipira_xique.jpeg', localizacao: 'R. Francisco Bretas Bering, 324 - Copacabana, Belo Horizonte - MG, 31550-060', url:'https://maps.app.goo.gl/kt9hFqw56qVC8i2R9', valor: 60 }
+    { id:'0003', nome: 'Parraxaxa', descricao: 'A cozinha do Nordeste, da carne de sol e do feijão verde.', foto: '../tela_reserva_restaurante/img-restaurantes/parraxaxa.png', localizacao: 'R. Igarassu, 40 - Casa Forte, Recife - PE, 52060-400', url:'https://maps.app.goo.gl/RU3AVNJZdU9Wfv5w8', valor: 80 },
+    { id:'0004', nome: 'Pão de Queijaria', descricao: 'Local animado e especialização em variações de pão de queijo.', foto: '../tela_reserva_restaurante/img-restaurantes/pao-de-queijaria-savassi.png', localizacao: 'R. Antônio de Albuquerque, 856 - Funcionários, Belo Horizonte - MG, 30112-011', url:'https://maps.app.goo.gl/gSTCG2x1846nUwqm7', valor: 100 },
+    { id:'0005', nome: 'Bar da Dona Onça', descricao: 'Restaurante tradicional, charmoso e com iluminação suave.', foto: '../tela_reserva_restaurante/img-restaurantes/bar_da_dona_onça.jpg', localizacao: 'Edifício Copan - Av. Ipiranga, 200 - 27 e 29 - Centro Histórico de São Paulo, São Paulo - SP, 01046-925', url:'https://maps.app.goo.gl/Kwx5qA4P1QowmBaN7', valor: 50 },
+    { id:'0006', nome: 'Caipira Xique', descricao: 'Porções e pratos típicos da cozinha mineira.', foto: '../tela_reserva_restaurante/img-restaurantes/caipira_xique.jpeg', localizacao: 'R. Francisco Bretas Bering, 324 - Copacabana, Belo Horizonte - MG, 31550-060', url:'https://maps.app.goo.gl/kt9hFqw56qVC8i2R9', valor: 60 }
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
           <p>${restaurante.descricao}</p>
           <img id="restArray" src="${restaurante.foto}" alt="${restaurante.nome}" />
           <a href="${restaurante.url}" target="_blank">
-          <p>Localização: ${restaurante.localizacao}</p>
+          <p>${restaurante.localizacao}</p>
           </a>
           <button id="${restaurante.id}" class="reservar-btn" onclick="openModal()">Reservar</button>
       `;
