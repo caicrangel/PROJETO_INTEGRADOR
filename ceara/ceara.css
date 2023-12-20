@@ -5,31 +5,35 @@
   scroll-behavior: smooth;
 }
 
+body{
+  background-color: #f7f7f7;
+}
+
+
 .container {
   max-width: 1080px;
   margin: auto; /*Centralizar a posição do container*/
   display: flex; /*Atributo que ajudar na hora alinhar os elementos*/
   padding: 30px; /*Espaçamento*/
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 /*ESTILIZANDO O CABEÇALHO*/
 header {
-  /* background-color: lightgrey */
-  background: linear-gradient(to bottom, rgb(240, 239, 239), white);
-  position: sticky;
+  background: linear-gradient(to bottom,rgb(240, 239, 239), #f2f2f2);
   width: 100%;
   height: 150px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
 }
 
 header::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, transparent, #d79c8f, transparent);
+  height: 5px; /* Altura da borda */
+  background: linear-gradient(90deg, transparent, #d79c8f, transparent); /* Efeito de gradiente na borda */
   bottom: 0;
   left: 0;
 }
@@ -57,23 +61,23 @@ nav li a {
   font-size: 14px;
 }
 
-nav ul li a:hover {
-  color: #d79c8f;
+nav ul li a:hover{
+    color: #d79c8f;
 }
 
-nav ul li a::after {
-  content: " ";
-  display: block;
-  width: 0;
-  height: 6px;
-  border-radius: 200px;
-  background: #d79c8f;
-  transition: all 0.2s ease;
+nav ul li a::after{
+    content: " ";
+    display: block;
+    width: 0;
+    height: 6px;
+    border-radius: 200px;
+    background: #d79c8f;
+    transition: all 0.2s ease;     
 }
 
-nav ul li a:hover::after {
-  width: 60%;
-  height: 6px;
+nav ul li a:hover::after{
+    width: 60%;
+    height: 6px;
 }
 
 /*Estilizando menu dropdown dos estados*/
@@ -103,7 +107,7 @@ nav .dropdown-estados a::after {
 }
 
 /* Estilizando o dropdown dos restaurantes*/
-nav .dropdown-restaurantes a::after {
+nav .dropdown-restaurantes a::after{
   content: " ";
   display: block;
   width: 0%;
@@ -113,18 +117,18 @@ nav .dropdown-restaurantes a::after {
   transition: all 0.2s ease;
 }
 
-.dropdown-restaurantes {
+.dropdown-restaurantes{
   position: absolute;
   display: none;
-  background-color: white;
+  background-color: white;  
 }
 
 .dropdown-restaurantes a {
   display: block;
-  color: #d79c8f;
+  color: #d79c8f;  
 }
 
-.dropdown-guia:hover .dropdown-restaurantes {
+.dropdown-guia:hover .dropdown-restaurantes{
   display: flex;
   flex-direction: column;
   z-index: 999;
@@ -132,7 +136,7 @@ nav .dropdown-restaurantes a::after {
 }
 
 /*Estilizando dropdown das Reservas*/
-nav .reservas a::after {
+nav .reservas a::after{
   content: " ";
   display: block;
   width: 0%;
@@ -142,18 +146,18 @@ nav .reservas a::after {
   transition: all 0.2s ease;
 }
 
-.reservas {
+.reservas{
   position: absolute;
   display: none;
-  background-color: white;
+  background-color: white;  
 }
 
 .reservas a {
   display: block;
-  color: #d79c8f;
+  color: #d79c8f;  
 }
 
-.dropdown-reservas:hover .reservas {
+.dropdown-reservas:hover .reservas{
   display: flex;
   flex-direction: column;
   z-index: 999;
@@ -175,6 +179,7 @@ nav .reservas a::after {
   font-size: 20px;
   color: #ffffff;
 }
+
 
 /*Estilizando barra de pesquisa*/
 .search-box {
@@ -203,16 +208,17 @@ nav .reservas a::after {
 }
 
 /*Estilizando seção descrição do estado*/
-.descricao {
+.descricao{
   max-width: 1080px;
   margin: auto; /*Centralizar a posição da div descricao*/
   display: table;
   padding: 40px; /*Espaçamento*/
   padding-top: 100px;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.img-descricao {
+
+.img-descricao{
   display: flex;
   flex-direction: column;
   float: right;
@@ -221,34 +227,43 @@ nav .reservas a::after {
   gap: 30px;
 }
 
-.img-desc {
+.img-desc{
   border-radius: 10px;
 }
 
-.paragrafo-descricao {
-  width: 700px;
-  display: table-cell;
-  text-align: justify;
-  margin-top: 250px;
+
+
+.paragrafo-descricao{
+width: 700px;  
+display: table-cell;
+text-align: justify;
+margin-top: 250px;
 }
 
-.paragrafo-descricao h1 {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.paragrafo-descricao h1{
+text-align: center;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
+  
+
+  
+  
+  
+  
+ 
 
 /*Estilizando seção culinária*/
-.culinaria {
+.culinaria{
   max-width: 1080px;
   margin: auto; /*Centralizar a posição da div */
   display: table;
   padding: 40px; /*Espaçamento*/
-  font-family: "Montserrat", sans-serif;
-}
+  font-family: 'Montserrat', sans-serif;
+}  
 
-.img-culinaria {
+.img-culinaria{
   display: flex;
   float: left;
   margin-left: -10px;
@@ -257,49 +272,54 @@ nav .reservas a::after {
   gap: 30px;
 }
 
-.img-culi {
-  border-radius: 10px;
+.img-culi{
+border-radius: 10px;
+
 }
 
-.paragrafo-culinaria {
-  width: 500px;
-  display: table-cell;
-  float: left;
-  margin-top: 60px;
-  margin-left: 70px;
-  text-align: justify;
+
+.paragrafo-culinaria{
+width: 500px;  
+display: table-cell;
+float: left;
+margin-top: 60px;
+margin-left: 70px;
+text-align: justify;
+
 }
 
-.paragrafo-culinaria h1 {
-  text-align: center;
+.paragrafo-culinaria h1{
+text-align: center;
+}  
+
+.img-culinaria{
+display: flex;
+float: left;
+margin-left: -10px;
+flex-direction: column;
+margin-top: 50px;
+gap: 30px;
 }
 
-.img-culinaria {
-  display: flex;
-  float: left;
-  margin-left: -10px;
-  flex-direction: column;
-  margin-top: 50px;
-  gap: 30px;
+.paragrafo-culinaria{
+width: 500px;  
+display: table-cell;
+float: left; 
+margin-top: 60px;
+margin-left: 70px;
+text-align: justify;
+  
 }
 
-.paragrafo-culinaria {
-  width: 500px;
-  display: table-cell;
-  float: left;
-  margin-top: 60px;
-  margin-left: 70px;
-  text-align: justify;
-}
+.paragrafo-culinaria h1{
+text-align: center;
 
-.paragrafo-culinaria h1 {
-  text-align: center;
 }
 
 /*Estilizando fundo da seção restaurantes*/
 
-.titulo-restaurantes {
-  margin-right: 30px;
+.titulo-restaurantes{
+margin-right: 30px; 
 }
 
 #dicas-restaurantes {
@@ -361,18 +381,19 @@ nav .reservas a::after {
   width: 900px;
 }
 
+
 /*Edições para footer*/
 
 /* Estilos para a seção de integrantes */
 .integ {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
+display: flex;
+flex-wrap: nowrap; 
+justify-content: space-between;
+align-items: center;
+flex-direction: column;
 }
 
-#integrantes {
+#integrantes{
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -381,88 +402,101 @@ nav .reservas a::after {
   padding: 20px;
 }
 
+
 .integrante {
-  width: 20%;
-  text-align: center;
-  color: black;
+width: 20%;
+text-align: center;
+color: black;
 }
 
 .integrante img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+width: 70px;
+height: 70px;
+border-radius: 50%;
 }
+
+
 
 /* Estilos para o rodapé */
 footer {
-  text-align: center;
-  padding: 10px;
-  color: black;
+text-align: center;
+padding: 10px;
+color: black;
 }
 
-.copy-footer {
-  color: black;
+.copy-footer{
+color: black;
   text-align: center;
   padding: 10px;
-  color: #d79c8f;
+  color: #d79c8f; 
 }
 
-.copy-footer {
+.copy-footer{
   color: black;
 }
 
 /* Estilos para as imagens com efeito de zoom */
 .zoomable {
-  transition: transform 0.3s; /* Adiciona uma transição suave para o efeito de escala */
+transition: transform 0.3s; /* Adiciona uma transição suave para o efeito de escala */
   transition: transform 0.3s; /* Adiciona uma transição suave para o efeito de escala */
 }
 
 /* Adiciona o efeito de escala ao passar o mouse */
 .zoomable:hover {
-  transform: scale(1.2); /* Amplia a imagem em 20% */
+transform: scale(1.2); /* Amplia a imagem em 20% */
 }
 
 /*Estilizando o footer*/
-footer {
+footer{
   background-color: #d79c8f;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
-footer .rodape {
+footer .rodape{
   display: flex;
   color: #ffffff;
   justify-content: space-evenly;
   align-items: flex-start;
 }
 
-footer .rodape ul {
+footer .rodape ul{
   width: 25%;
   list-style-type: none;
+
 }
 
-footer .rodape h3 {
+footer .rodape h3{
   margin-bottom: 16px;
   font-weight: 600;
 }
 
-footer .rodape .redes-sociais i {
+.redes-sociais{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  
+}
+
+footer .rodape .redes-sociais i{
   margin-right: 10px;
   width: 50px;
   height: 50px;
-  /* background-image: linear-gradient(45deg, #d79c8f, #dbebe1);*/
   border: none;
   margin-right: 10px;
   border-radius: 8px;
   cursor: pointer;
+  border: #888;
 }
 
-footer .rodape ul > p {
+footer .rodape ul >p{
   margin-bottom: 40px;
 }
-footer .rodape li {
+footer .rodape li{
   margin: 10px 0;
 }
 
-footer .rodape a {
+footer .rodape a{
   color: white;
+  text-decoration: none;
 }
