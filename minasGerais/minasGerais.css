@@ -40,7 +40,6 @@ header::before {
 
 .logo img {
   width: 200px;
-  
   border-radius: 50px;
 }
 
@@ -101,6 +100,64 @@ nav .dropdown-estados a::after {
   display: block;
 }
 
+/* Estilizando o dropdown dos restaurantes*/
+nav .dropdown-restaurantes a::after{
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-radius: 200px;
+  background-color: #d79c8f;
+  transition: all 0.2s ease;
+}
+
+.dropdown-restaurantes{
+  position: absolute;
+  display: none;
+  background-color: white;  
+}
+
+.dropdown-restaurantes a {
+  display: block;
+  color: #d79c8f;  
+}
+
+.dropdown-guia:hover .dropdown-restaurantes{
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  border-radius: 5px;
+}
+
+/*Estilizando dropdown das Reservas*/
+nav .reservas a::after{
+  content: " ";
+  display: block;
+  width: 0%;
+  height: 4px;
+  border-radius: 200px;
+  background-color: #d79c8f;
+  transition: all 0.2s ease;
+}
+
+.reservas{
+  position: absolute;
+  display: none;
+  background-color: white;  
+}
+
+.reservas a {
+  display: block;
+  color: #d79c8f;  
+}
+
+.dropdown-reservas:hover .reservas{
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  border-radius: 5px;
+}
+
 /*Estilizando  os ícones de rede sociais*/
 .sociais button {
   width: 40px;
@@ -159,7 +216,13 @@ nav .dropdown-estados a::after {
   display: table-cell;
   float: right;
   margin-left: 50px; 
-  padding-top: 50px;     
+  padding-top: 50px; 
+     
+}
+
+.img-desc{
+  border-radius: 10px;
+  margin-top: 90px;
 }
 
 .paragrafo-descricao{
@@ -198,7 +261,7 @@ border-radius: 10px;
 width: 500px;  
 display: table-cell;
 float: left; 
-margin-top: 60px;
+margin-top: 150px;
 margin-left: 70px;
 text-align: justify;
 
@@ -215,7 +278,7 @@ text-align: center;
 margin-right: 30px; 
 }
 
-.dicas-restaurantes{
+#dicas-restaurantes{
   margin: auto; /*Centralizar a posição da div */
   display:flex;
   flex-direction: row;
@@ -224,7 +287,17 @@ margin-right: 30px;
   margin-bottom: 40px;
   font-family: 'Montserrat', sans-serif; 
   text-align: justify;
-  width: 900px;
+  width: 900px;  
+  
+}
+
+.transicao{
+  opacity: 0;
+  transition: opacity 2s ease-in-out; /* Adicione a propriedade de transição */
+}
+
+.transicao.active{
+  opacity: 1;
 }
 
 .alinha-titulo{
@@ -303,30 +376,3 @@ transition: transform 0.3s; /* Adiciona uma transição suave para o efeito de e
 .zoomable:hover {
 transform: scale(1.2); /* Amplia a imagem em 20% */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
