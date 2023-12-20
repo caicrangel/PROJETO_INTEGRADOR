@@ -320,7 +320,7 @@ text-align: center;
 margin-right: 30px; 
 }
 
-.dicas-restaurantes{
+#dicas-restaurantes{
 margin: auto; /*Centralizar a posição da div */
 display:flex;
 flex-direction: row;
@@ -330,6 +330,20 @@ margin-bottom: 40px;
 font-family: 'Montserrat', sans-serif; 
 text-align: justify;
 width: 900px;
+}
+
+.transicao {
+  opacity: 0;
+  transition: opacity 2s ease-in-out; /* Adicione a propriedade de transição */
+}
+
+.transicao.active {
+  opacity: 1;
+}
+
+.alinha-titulo {
+  margin-top: 100px;
+  text-align: center;
 }
 
 .alinha-titulo{
@@ -490,5 +504,3 @@ footer .rodape a{
   color: white;
   text-decoration: none;
 }
-
-
