@@ -88,7 +88,7 @@ function fecharFormulario() {
 }
 
 function enviarFormulario() {
-	alert("Formulário enviado com sucesso!");
+	alert("Cadastro realizado com sucesso!");
 	fecharFormulario();
 }
 // =================== Fim ========================
