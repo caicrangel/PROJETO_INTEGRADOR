@@ -207,3 +207,34 @@ input.correct {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* estilização do olho senha */
+
+.password-container {
+  position: relative;
+}
+
+/* Estilize o ícone de olho */
+#password-visibility {
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#password-visibilityCadastro{
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+#password-visibilityCadastro2{
+  position: absolute;
+  top: 55%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
