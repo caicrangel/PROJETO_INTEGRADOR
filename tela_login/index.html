@@ -26,7 +26,10 @@
             <input type="text" id="login-usuario" name="login-usuario">
             <p id="userInvalido"></p>
             <label class="label1" for="login-senha">Senha:</label>
-            <input type="password" id="login-senha" name="login-senha" >
+            <div class="password-container">
+              <input type="password" id="login-senha" name="login-senha" >
+              <span id="password-visibility" onclick="togglePasswordVisibilityLogin()">👁️</span>
+            </div>
             <p id="senhaIncorreta"></p>
           </div>
         </form>
@@ -57,11 +60,17 @@
         <p id="idade-helper" class="helper-text"></p>
     
         <label for="senha">*Senha:</label>
-        <input type="password" id="senha" name="senha">
+        <div class="password-container">
+          <input type="password" id="senha" name="senha">
+          <span id="password-visibilityCadastro" onclick="togglePasswordVisibilityCadastro1()">👁️</span>
+        </div>
         <p id="senha-helper" class="helper-text"></p>
     
         <label for="confirma-senha">*Confirmar senha:</label>
-        <input type="password" id="confirma-senha" name="confirma-senha">
+        <div class="password-container">
+          <input type="password" id="confirma-senha" name="confirma-senha">
+          <span id="password-visibilityCadastro2" onclick="togglePasswordVisibilityCadastro2()">👁️</span>
+        </div>
         <p id="senha-helper2" class="helper-text"></p>
     
         <div id="botoes">
