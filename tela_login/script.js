@@ -81,15 +81,78 @@ inputPass.addEventListener('focus',()=>{
 
 function mostrarFormulario() {
 	document.getElementById("overlay").style.display = "flex";
+	let confirmSenhaLabel = document.querySelector('label[for="confirma-senha"]')
+	let confirmSenhaInput = document.getElementById('confirma-senha')
+	let confirmSenhaHelp = document.getElementById('senha-helper2')
+	let visibilityIcon = document.getElementById('password-visibilityCadastro2');
+
+
+	confirmSenhaLabel.style.display = 'none'
+	confirmSenhaInput.style.display = 'none'
+	confirmSenhaHelp.style.display = 'none'
+	visibilityIcon.style.display = 'none'
 }
 
 function fecharFormulario() {
 	document.getElementById("overlay").style.display = "none";
+	
+	let usernameInput = document.getElementById("username");
+	usernameInput.value = ''
+	usernameInput.classList.remove('correct')
+	usernameInput.classList.remove('error')
+	let usernameHelper = document.getElementById("username-helper");
+	usernameHelper.classList.remove('visible')
+
+	let emailInput = document.getElementById("email");
+	emailInput.value = ''
+	emailInput.classList.remove('correct')
+	emailInput.classList.remove('error')
+	let emailHelper = document.getElementById("email-helper");
+	emailHelper.classList.remove('visible')
+
+	let idadeInput = document.getElementById('idade')
+	idadeInput.value = ''
+	idadeInput.classList.remove('correct')
+	idadeInput.classList.remove('error')
+	let idadeHelp = document.getElementById('idade-helper')
+	idadeHelp.classList.remove('visible')
+
+	let senhaInput = document.getElementById('senha')
+	senhaInput.value = ''
+	senhaInput.classList.remove('correct')
+	senhaInput.classList.remove('error')
+	let senhaHelp = document.getElementById('senha-helper')
+	senhaHelp.classList.remove('visible')
+
+	let confirmSenhaInput = document.getElementById('confirma-senha')
+	confirmSenhaInput.value = ''
+	confirmSenhaInput.classList.remove('correct')
+	confirmSenhaInput.classList.remove('error')
+	let confirmSenhaHelp = document.getElementById('senha-helper2')
+	confirmSenhaHelp.classList.remove('visible')
 }
 
 function enviarFormulario() {
+	let usernameInput = document.getElementById("username");
+	let usernameHelper = document.getElementById("username-helper");
+
+	let emailInput = document.getElementById("email");
+	let emailHelper = document.getElementById("email-helper");
+
+
+	if (usernameInput.value === '') {
+		usernameHelper.classList.add('visible')
+		usernameHelper.innerText = 'Preencha o usuário!'
+
+	} 
+	if(emailInput.value === ''){
+		emailHelper.classList.add('visible')
+		emailHelper.innerText = 'Preencha o e-mail!'
+	}
+	else {
 	alert("Cadastro realizado com sucesso!");
 	fecharFormulario();
+}
 }
 // =================== Fim ========================
 
@@ -233,7 +296,7 @@ function bloqueiaEnter(input){
 	// Validar valor do input
 	senhaInput.addEventListener('change',(e)=>{
 			let senha = e.target.value
-	
+			const visibilityIcon = document.getElementById('password-visibilityCadastro2');
 			if (validarSenha(senha) === true) {
 					senhaInput.classList.add('correct')
 					senhaInput.classList.remove('error')
@@ -241,6 +304,7 @@ function bloqueiaEnter(input){
 					senhaHelp.innerText = ''
 					confirmSenhaLabel.style.display = 'block'
 					confirmSenhaInput.style.display = 'block'
+					visibilityIcon.style.display = 'block'
 			} else {
 					senhaInput.classList.remove('correct')
 					senhaInput.classList.add('error')
@@ -253,6 +317,7 @@ function bloqueiaEnter(input){
 					`
 					confirmSenhaLabel.style.display = 'none'
 					confirmSenhaInput.style.display = 'none'
+					visibilityIcon.style.display = 'none'
 			}
 			if (senha === '') {
 					confirmSenhaInput.value = ''
@@ -328,3 +393,42 @@ document.getElementById('form-cadastro').addEventListener('submit', function(eve
 
 	console.log(bdUser);
 });
+
+function togglePasswordVisibilityLogin() {
+  const passwordInput = document.getElementById('login-senha');
+  const visibilityIcon = document.getElementById('password-visibility');
+
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    visibilityIcon.innerText = '👀'; // Olho aberto
+  } else {
+    passwordInput.type = 'password';
+    visibilityIcon.innerText = '👁️'; // Olho fechado
+  }
+}
+
+function togglePasswordVisibilityCadastro1() {
+  const passwordInput = document.getElementById('senha');
+  const visibilityIcon = document.getElementById('password-visibilityCadastro');
+
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    visibilityIcon.innerText = '👀'; // Olho aberto
+  } else {
+    passwordInput.type = 'password';
+    visibilityIcon.innerText = '👁️'; // Olho fechado
+  }
+}
+
+function togglePasswordVisibilityCadastro2() {
+  const passwordInput = document.getElementById('confirma-senha');
+  const visibilityIcon = document.getElementById('password-visibilityCadastro2');
+
+  if (passwordInput.type === 'password') {
+    passwordInput.type = 'text';
+    visibilityIcon.innerText = '👀'; // Olho aberto
+  } else {
+    passwordInput.type = 'password';
+    visibilityIcon.innerText = '👁️'; // Olho fechado
+  }
+}
