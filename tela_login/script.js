@@ -96,40 +96,40 @@ function mostrarFormulario() {
 function fecharFormulario() {
 	document.getElementById("overlay").style.display = "none";
 	
-	let usernameInput = document.getElementById("username");
-	usernameInput.value = ''
-	usernameInput.classList.remove('correct')
-	usernameInput.classList.remove('error')
-	let usernameHelper = document.getElementById("username-helper");
-	usernameHelper.classList.remove('visible')
+	// let usernameInput = document.getElementById("username");
+	// // usernameInput.value = ''
+	// usernameInput.classList.remove('correct')
+	// usernameInput.classList.remove('error')
+	// let usernameHelper = document.getElementById("username-helper");
+	// usernameHelper.classList.remove('visible')
 
-	let emailInput = document.getElementById("email");
-	emailInput.value = ''
-	emailInput.classList.remove('correct')
-	emailInput.classList.remove('error')
-	let emailHelper = document.getElementById("email-helper");
-	emailHelper.classList.remove('visible')
+	// let emailInput = document.getElementById("email");
+	// emailInput.value = ''
+	// emailInput.classList.remove('correct')
+	// emailInput.classList.remove('error')
+	// let emailHelper = document.getElementById("email-helper");
+	// emailHelper.classList.remove('visible')
 
-	let idadeInput = document.getElementById('idade')
-	idadeInput.value = ''
-	idadeInput.classList.remove('correct')
-	idadeInput.classList.remove('error')
-	let idadeHelp = document.getElementById('idade-helper')
-	idadeHelp.classList.remove('visible')
+	// let idadeInput = document.getElementById('idade')
+	// idadeInput.value = ''
+	// idadeInput.classList.remove('correct')
+	// idadeInput.classList.remove('error')
+	// let idadeHelp = document.getElementById('idade-helper')
+	// idadeHelp.classList.remove('visible')
 
-	let senhaInput = document.getElementById('senha')
-	senhaInput.value = ''
-	senhaInput.classList.remove('correct')
-	senhaInput.classList.remove('error')
-	let senhaHelp = document.getElementById('senha-helper')
-	senhaHelp.classList.remove('visible')
+	// let senhaInput = document.getElementById('senha')
+	// senhaInput.value = ''
+	// senhaInput.classList.remove('correct')
+	// senhaInput.classList.remove('error')
+	// let senhaHelp = document.getElementById('senha-helper')
+	// senhaHelp.classList.remove('visible')
 
-	let confirmSenhaInput = document.getElementById('confirma-senha')
-	confirmSenhaInput.value = ''
-	confirmSenhaInput.classList.remove('correct')
-	confirmSenhaInput.classList.remove('error')
-	let confirmSenhaHelp = document.getElementById('senha-helper2')
-	confirmSenhaHelp.classList.remove('visible')
+	// let confirmSenhaInput = document.getElementById('confirma-senha')
+	// confirmSenhaInput.value = ''
+	// confirmSenhaInput.classList.remove('correct')
+	// confirmSenhaInput.classList.remove('error')
+	// let confirmSenhaHelp = document.getElementById('senha-helper2')
+	// confirmSenhaHelp.classList.remove('visible')
 }
 
 function enviarFormulario() {
